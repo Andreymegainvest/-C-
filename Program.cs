@@ -51,15 +51,35 @@
 // -3 -> нет
 // 7 -> нет
 
+// Console.WriteLine("Введите число: ");
+// int Number = Convert.ToInt32(Console.ReadLine());
+
+// if (Number % 2 == 0)
+// {
+//     Console.WriteLine("Число " + Number + " является: Чётным");
+// }
+
+// else
+// {
+//     Console.WriteLine("Число " + Number + " является: Нечётным");
+// }
+
+// Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+// 5 -> 2, 4
+// 8 -> 2, 4, 6, 8
+
+int i = 1;
+
 Console.WriteLine("Введите число: ");
 int Number = Convert.ToInt32(Console.ReadLine());
 
-if (Number % 2 == 0)
+Console.WriteLine("Чётные числа от 1 до " + Number);
+while (i <= Number)
 {
-    Console.WriteLine("Число " + Number + " является: Чётным");
+    if (i % 2 != 1)
+    {
+        Console.WriteLine(i + ", ");
+    }
+    i++;
 }
 
-else
-{
-    Console.WriteLine("Число " + Number + " является: Нечётным");
-}
