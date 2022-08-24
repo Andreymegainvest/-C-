@@ -22,26 +22,44 @@
 // } 
 
 // 
-// Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
-
+// Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.  
 // 2, 3, 7 -> 7
 // 44 5 78 -> 78
 // 22 3 9 -> 22
-Console.WriteLine("Введите 3 числа: ");
-int num_1 = Convert.ToInt32(Console.ReadLine());
-int num_2 = Convert.ToInt32(Console.ReadLine());
-int num_3 = Convert.ToInt32(Console.ReadLine());
 
-int max = num_1;
+// Console.WriteLine("Введите 3 числа: ");
+// int num_1 = Convert.ToInt32(Console.ReadLine());
+// int num_2 = Convert.ToInt32(Console.ReadLine());
+// int num_3 = Convert.ToInt32(Console.ReadLine());
 
-if (num_2 > max)
+// int max = num_1;
+
+// if (num_2 > max)
+// {
+//     max = num_2;
+// }
+
+// if (num_3 > max)
+// {
+//     max = num_3;
+// }
+
+// Console.WriteLine("Максимальное из введённых: " + max);
+
+// Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+// 4 -> да
+// -3 -> нет
+// 7 -> нет
+
+Console.WriteLine("Введите число: ");
+int Number = Convert.ToInt32(Console.ReadLine());
+
+if (Number % 2 == 0)
 {
-    max = num_2;
+    Console.WriteLine("Число " + Number + " является: Чётным");
 }
 
-if (num_3 > max)
+else
 {
-    max = num_3;
+    Console.WriteLine("Число " + Number + " является: Нечётным");
 }
-
-Console.WriteLine("Максимальное из введённых: " + max);
