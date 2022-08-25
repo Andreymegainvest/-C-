@@ -68,18 +68,29 @@
 // 5 -> 2, 4
 // 8 -> 2, 4, 6, 8
 
-int i = 1;
+// int i = 1;
 
-Console.WriteLine("Введите число: ");
-int Number = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число: ");
+// int Number = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Чётные числа от 1 до " + Number);
-while (i <= Number)
-{
-    if (i % 2 != 1)
-    {
-        Console.WriteLine(i + ", ");
-    }
-    i++;
-}
+// Console.WriteLine("Чётные числа от 1 до " + Number);
+// while (i <= Number)
+// {
+//     if (i % 2 != 1)
+//     {
+//         Console.WriteLine(i + ", ");
+//     }
+//     i++;
+// }
 
+Console.Clear();
+
+Console.WriteLine("Задача 10 ");
+
+Console.WriteLine("Введите трёхзначное число: ");
+
+int threeDigitNumber = Convert.ToInt32(Console.ReadLine());
+
+string stringNumber = Convert.ToString(threeDigitNumber);
+
+Console.WriteLine("вторая цифра этого числа = " + stringNumber[1]);
